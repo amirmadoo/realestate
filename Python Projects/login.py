@@ -46,7 +46,7 @@ label = Label(image=left).place(x=80, y=100,width=450,height=500)
 right_frame=Frame (root,bg="white")
 right_frame.place(x=480, y=100, width=500, height=500)
 
-#creating database
+#creating users database
 
 # conn = sqlite3.connect('users.db')
 
@@ -67,6 +67,39 @@ right_frame.place(x=480, y=100, width=500, height=500)
 # conn.commit()
 
 # # close connection
+# conn.close()
+
+#creating properties database
+
+conn = sqlite3.connect('users.db')
+
+# #create cursor
+# c = conn.cursor()
+
+# c.execute("""CREATE TABLE user_properties (
+#     OwnerN text,
+#     mobile_no integer,
+#     emailid text,
+#     propertytype text,
+#     bhks text,
+#     superarea integer,
+#     carpetarea integer,
+#     status text,
+#     rpoption text,
+#     facilities text,
+#     state text,
+#     cityvill text,
+#     landmark text,
+#     address text,
+#     price integer,
+#     unit text
+# )""")
+
+
+# commit changes
+# conn.commit()
+
+# close connection
 # conn.close()
 
 
